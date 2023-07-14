@@ -2,6 +2,8 @@
 
 This repository contains the front-end code for the product description site. The site is developed using HTML and Bootstrap 5.30.
 
+Check back-end [here](https://github.com/Maclenn77/product-description-back)
+
 ## Installation
 
 To run the site locally, follow these steps:
