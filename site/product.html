@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Dashboard </title>
+    <title>Product | Detail</title>
     
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/css/dashboard.css" rel="stylesheet">
+    <link href="assets/css/product.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <style>
       .bd-placeholder-img {
@@ -86,23 +92,7 @@
     </style>
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
 
-    
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="calendar3" viewBox="0 0 16 16">
     <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
@@ -185,19 +175,19 @@
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+              <a class="nav-link d-flex align-items-center gap-2 active" href="dashboard.html">
                 <svg class="bi"><use xlink:href="#house-fill"/></svg>
                 Dashboard
               </a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="products.html">
+              <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="products.html">
                 <svg class="bi"><use xlink:href="#cart"/></svg>
                 Products
               </a>
             </li>
-
+            
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="#">
                 <svg class="bi"><use xlink:href="#puzzle"/></svg>
@@ -216,7 +206,7 @@
               </a>
             </li>
             <li class="nav-item" id="logOut">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <a class="nav-link d-flex align-items-center gap-2"  href="#">
                 <svg class="bi"><use xlink:href="#door-closed"/></svg>
                 Log out
               </a>
@@ -227,84 +217,148 @@
     </div>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <br><br>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
-            <img src="https://i.dummyjson.com/data/products/6/thumbnail.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">MacBook Pro</h5>
-              <p class="card-text">MacBook Pro 2021 with mini-LED display may launch between September, November</p>
-              <a href="product.html?id=6" class="btn btn-primary">Generate content</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-md-1">
-          <div class="card" style="width: 18rem;">
-            <img src="https://i.dummyjson.com/data/products/8/thumbnail.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Microsoft Surface Laptop 4</h5>
-              <p class="card-text">Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas.</p>
-              <a href="product.html?id=8" class="btn btn-primary">Generate content</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-md-1">
-          <div class="card" style="width: 18rem;">
-            <img src="https://i.dummyjson.com/data/products/7/thumbnail.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Samsung Galaxy Book</h5>
-              <p class="card-text">Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched.</p>
-              <a href="product.html?id=7" class="btn btn-primary">Generate content</a>
-            </div>
-          </div>
-        </div>
+      
+      <input type="hidden" id="producID">
 
-      </div>
+         <div class="pd-wrap">
+		<div class="container">
+	        <div class="heading-section">
+	            <h2>Product details</h2>
+	        </div>
+	        <div class="row">
+	        	<div class="col-md-6">
+	        		<div id="slider" class="owl-carousel product-slider">
+						
+						
+					  </div>
 
-      <br><br>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
-            <img src="https://i.dummyjson.com/data/products/2/thumbnail.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">iPhone X</h5>
-              <p class="card-text">SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with</p>
-              <a href="product.html?id=2" class="btn btn-primary">Generate content</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-md-1">
-          <div class="card" style="width: 18rem;">
-            <img src="https://i.dummyjson.com/data/products/5/thumbnail.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Huawei P30</h5>
-              <p class="card-text">Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday</p>
-              <a href="product.html?id=5" class="btn btn-primary">Generate content</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-md-1">
-          <div class="card" style="width: 18rem;">
-            <img src="https://i.dummyjson.com/data/products/4/thumbnail.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">OPPOF19</h5>
-              <p class="card-text">OPPO F19 is officially announced on April 2021.New Edition was officially unveiled tomorrow</p>
-              <a href="product.html?id=4" class="btn btn-primary">Generate content</a>
-            </div>
-          </div>
-        </div>
+					<div id="thumb" class="owl-carousel product-thumb">
+						
+						
+					</div>
+	        	</div>
+	        	<div class="col-md-6">
+	        		<div class="product-dtl">
+        				<div class="product-info">
+		        			<div class="product-name"><span id="productName"></span></div>
+		        			<div class="reviews-counter">
+								<div class="rate">
+								    <input type="radio" id="star5" name="rate" value="5" checked />
+								    <label for="star5" title="text">5 stars</label>
+								    <input type="radio" id="star4" name="rate" value="4" checked />
+								    <label for="star4" title="text">4 stars</label>
+								    <input type="radio" id="star3" name="rate" value="3" checked />
+								    <label for="star3" title="text">3 stars</label>
+								    <input type="radio" id="star2" name="rate" value="2" />
+								    <label for="star2" title="text">2 stars</label>
+								    <input type="radio" id="star1" name="rate" value="1" />
+								    <label for="star1" title="text">1 star</label>
+								  </div>
+								<span>3 Reviews</span>
+							</div>
+		        			<div class="product-price-discount"><span id="price"></span><span class="line-through" id="oldPrice"></span></div>
+		        		</div>
+	        			<p> <span id="productDetail"></span> </p>
+	        			<div class="row">
+	        				<div class="col-md-6">
+	        					<label for="size">Segment People</label>
+								<select id="segmentID" name="size" class="form-control">
+									<option value="young people">18-25</option>
+									<option value="young adults">25-30</option>
+									<option value="dults">30-40</option>
+									<option value="old people">Otro</option>
+								</select>
+	        				</div>
+	        				<div class="col-md-6">
+	        					<label for="color">Season</label>
+								<select id="seasonID" name="color" class="form-control">
+									<option value="Women's Day">Women's Day</option>
+									<option value="Father's day">Father's day</option>
+									<option value="Christmas">Christmas</option>
+								</select>
+	        				</div>
+	        			</div>
+                        <div class="row">
+                            <div class="col-md-6">
+	        					<label for="color">Creativity level</label>
+								<select id="creativityID" name="color" class="form-control">
+									<option value="Low">Low</option>
+									<option value="moderate">Moderate</option>
+									<option value="High">High</option>
+								</select>
+	        				</div>
+	        				<div class="col-md-6">
+	        					<label for="color">Usage</label>
+								<select id="usageID" name="color" class="form-control">
+									<option value="Product description">Product description</option>
+									<option value="Facebook post">Facebook post</option>
+									<option value="Special offer">Special offer</option>
+								</select>
+	        				</div>
+                        </div>
+                        <div class="row">
+                          
+                            <div class="col-md-12">
+                              <br>
+                              <div class="input-group">
+                                <span class="input-group-text">
+                                  keywords
+                                </span>
+                                  
+                                <input type="text" class="form-control" id="key1">
+                                <input type="text" class="form-control" id="key2">
+                                <input type="text" class="form-control" id="key3">
+                                <input type="text" class="form-control" id="key4">
+                                <hr>
+                            </div>
+                        </div>
 
-      </div>
+                        <div class="row">
+                            
+                            <div class="col-md-6">
+                              <br>
+                                <a href="#" class="btn btn-primary" id="generate">Generate content</a>
+                            </div>
 
+                        </div>
+	        			
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="product-info-tabs">
+		        <ul class="nav nav-tabs" id="myTab" role="tablist">
+				  	<li class="nav-item">
+				    	<a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+				  	</li>
+				  	<!--<li class="nav-item">
+				    	<a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews (0)</a>
+				  	</li>-->
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  	<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+				  		
+              
+
+            </div>
+				  	
+				</div>
+			</div>
+			
+			
+        </div>
+	</div>   
+      
     </main>
-
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jQuery/jquery-3.7.0.min.js"></script>
-<script src="assets/js/dashboard.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="assets/js/product.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
